@@ -1,0 +1,1 @@
+This bug demonstrates a common error in Dapps when dealing with asynchronous operations.  The `getBalance` function returns a promise, but the conditional statement treats it as a number. This results in the condition always evaluating to false. The solution shows the correct way to use `.then()` to handle the promise and access the actual balance.
